@@ -56,6 +56,26 @@ header {
 		display: block;
 		margin: 0 auto;
 	}
+	
+	@include respond-to( 768px ) {
+		position: relative;
+
+		.logo {
+			z-index: 1;
+		}
+
+		.button {
+			z-index: 100;
+			position: relative;
+			top: -100px;
+		}
+	}
+
+	@include respond-to( 1024px ) {
+		.button {
+			top: -140px;
+		}
+	}
 }
 
 
