@@ -52,9 +52,15 @@ body {
 header {
 	text-align: center;
 
-	img {
+	.logo {
 		display: block;
 		margin: 0 auto;
+	}
+
+	.button {
+		img {
+			margin: 0 4px 5px 0;
+		}
 	}
 	
 	@include respond-to( 768px ) {
